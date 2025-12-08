@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Flappy Bird Clone</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+        canvas {
+            border: 2px solid #333;
+            background-color: #70c5ce; /* Sky Blue */
+        }
+        #score-display {
+            position: absolute;
+            top: 50px;
+            font-size: 48px;
+            font-weight: bold;
+            color: black;
+            text-shadow: 2px 2px white;
+        }
+        #instructions {
+            position: absolute;
+            top: 120px;
+            font-size: 20px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="gameCanvas" width="500" height="800"></canvas>
+    <div id="score-display">0</div>
+    <div id="instructions">Press SPACE or click to jump!</div>
+    <script src="game.js"></script>
+</body>
+</html>
